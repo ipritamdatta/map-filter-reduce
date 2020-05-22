@@ -36,7 +36,7 @@ function vegetableData() {
 
       //   adding 15% vat to all the price whose value is > 50
       const getMappedData = getFilteredData.map((veg) => {
-        return veg.price * 0.15;
+        return veg.price+veg.price * 0.15;
       });
       console.log("15% vat added to vegetables price greater than 50");
       console.log(getMappedData);
